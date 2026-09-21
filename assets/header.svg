@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="1200" height="250" role="img" aria-label="Aditya Gorane — backend engineer, competitive programmer">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .drift { animation: drift 7s linear infinite; }
+    .d2 { animation-duration: 10s; }
+    .d3 { animation-duration: 8.5s; }
+    @keyframes drift { from { transform: translateY(-84px); } to { transform: translateY(0); } }
+    .ink { stroke-dasharray: 1; stroke-dashoffset: 1; animation: ink 14s ease-in-out infinite; }
+    .ink2 { animation-delay: 0.9s; }
+    @keyframes ink {
+      0%   { stroke-dashoffset: 1; opacity: 0; }
+      4%   { opacity: 0.5; }
+      34%  { stroke-dashoffset: 0; }
+      80%  { stroke-dashoffset: 0; opacity: 0.5; }
+      96%  { opacity: 0; }
+      100% { stroke-dashoffset: 0; opacity: 0; }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101316"/>
+      <stop offset="55%" stop-color="#0c0e10"/>
+      <stop offset="100%" stop-color="#0a0c0d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.12" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="#b0764f" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#b0764f" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="1200" height="250"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="250" fill="url(#bg)"/>
+  <rect width="1200" height="250" fill="url(#glow)"/>
+
+  <!-- rain, barely there -->
+  <g clip-path="url(#frame)" stroke="#c9c5b8" stroke-width="1" stroke-linecap="round" opacity="0.07">
+    <g class="drift">
+      <line x1="150" y1="-84" x2="147" y2="-62"/><line x1="150" y1="0" x2="147" y2="22"/><line x1="150" y1="84" x2="147" y2="106"/><line x1="150" y1="168" x2="147" y2="190"/>
+      <line x1="430" y1="-60" x2="427" y2="-38"/><line x1="430" y1="24" x2="427" y2="46"/><line x1="430" y1="108" x2="427" y2="130"/><line x1="430" y1="192" x2="427" y2="214"/>
+      <line x1="770" y1="-84" x2="767" y2="-62"/><line x1="770" y1="0" x2="767" y2="22"/><line x1="770" y1="84" x2="767" y2="106"/><line x1="770" y1="168" x2="767" y2="190"/>
+      <line x1="1010" y1="-40" x2="1007" y2="-18"/><line x1="1010" y1="44" x2="1007" y2="66"/><line x1="1010" y1="128" x2="1007" y2="150"/><line x1="1010" y1="212" x2="1007" y2="234"/>
+    </g>
+    <g class="drift d2">
+      <line x1="300" y1="-84" x2="298" y2="-66"/><line x1="300" y1="0" x2="298" y2="18"/><line x1="300" y1="84" x2="298" y2="102"/><line x1="300" y1="168" x2="298" y2="186"/>
+      <line x1="640" y1="-50" x2="638" y2="-32"/><line x1="640" y1="34" x2="638" y2="52"/><line x1="640" y1="118" x2="638" y2="136"/><line x1="640" y1="202" x2="638" y2="220"/>
+      <line x1="1130" y1="-84" x2="1128" y2="-66"/><line x1="1130" y1="0" x2="1128" y2="18"/><line x1="1130" y1="84" x2="1128" y2="102"/><line x1="1130" y1="168" x2="1128" y2="186"/>
+    </g>
+    <g class="drift d3">
+      <line x1="880" y1="-70" x2="878" y2="-54"/><line x1="880" y1="14" x2="878" y2="30"/><line x1="880" y1="98" x2="878" y2="114"/><line x1="880" y1="182" x2="878" y2="198"/>
+    </g>
+  </g>
+
+  <!-- a mark being written, slowly, on the right -->
+  <g transform="translate(1035 125)" fill="none" stroke="#c9c5b8" stroke-linecap="round">
+    <circle class="ink" pathLength="1" r="62" stroke-width="5" opacity="0.5"/>
+    <path class="ink ink2" pathLength="1" d="M -60.4 -34.9 A 69.7 69.7 0 0 1 60.4 -34.9" stroke-width="2" opacity="0.5"/>
+    <path class="ink ink2" pathLength="1" d="M -36 36 A 51 51 0 0 0 36 36" stroke-width="2.5" opacity="0.5"/>
+  </g>
+
+  <text class="mono" x="72" y="126" font-size="52" letter-spacing="7" fill="#c9c5b8">ADITYA GORANE</text>
+  <text class="mono" x="74" y="164" font-size="18" letter-spacing="2.4" fill="#9a978c">BACKEND &#183; REAL-TIME &#183; SYSTEMS</text>
+  <rect x="74" y="186" width="118" height="2" fill="#b0764f"/>
+  <text class="mono" x="74" y="216" font-size="15" fill="#7d7b73">software should outlive the excitement of writing it</text>
+</svg>
