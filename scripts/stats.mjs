@@ -80,7 +80,8 @@ langs.forEach((l, i) => {
   right += `<text x="${MID + 56}" y="${y}" font-family="${MONO}" font-size="14" fill="${MUTED}">${esc(l.name)}</text>`;
   right += `<text x="${MID + 676}" y="${y}" text-anchor="end" font-family="${MONO}" font-size="13" fill="${FAINT}">${l.pct.toFixed(1)}%</text>`;
   right += `<rect x="${MID + 56}" y="${y + 6}" width="${barW}" height="4" rx="2" fill="${BONE}" opacity="0.07"/>`;
-  right += `<rect x="${MID + 56}" y="${y + 6}" width="${Math.max(3, (l.pct / langs[0].pct) * barW)}" height="4" rx="2" fill="${l.color}" opacity="0.85"/>`;
+  const w = Math.max(3, (l.pct / langs[0].pct) * barW).toFixed(1);
+  right += `<rect x="${MID + 56}" y="${y + 6}" width="${w}" height="4" rx="2" fill="${l.color}" opacity="0.85"/>`;
 });
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="GitHub statistics for ${USER}">
