@@ -123,7 +123,7 @@ a public API. There is a door hidden in the footer.
 [![peak](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcodeforces.com%2Fapi%2Fuser.info%3Fhandles%3DAdiGo112&query=%24.result%5B0%5D.maxRating&label=peak&labelColor=0c0e10&color=2b2f33&style=flat-square)](https://codeforces.com/profile/AdiGo112)
 [![leetcode](https://img.shields.io/badge/leetcode-knight-2b2f33?labelColor=0c0e10&style=flat-square)](https://leetcode.com/u/AdiGo_112/)
 
-456 problems across both platforms. Contests taught me abstraction, optimization
+Contests taught me abstraction, optimization
 and debugging under pressure — most of what production asks for anyway. The first
 three badges read live from the Codeforces API: no cron, no bot, no commit.
 
